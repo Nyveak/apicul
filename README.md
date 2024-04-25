@@ -2,7 +2,7 @@
 
 <br>
 
-![](laragon_img/Evidencia Laragon.PNG)
+![](https://github.com/Nyveak/apicul/blob/main/laragon_img/Evidencia%20Laragon.PNG)
 
 <br>
 <br>
