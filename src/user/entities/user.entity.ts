@@ -14,10 +14,14 @@ export class User {
     @Column()
     address: string;
 
-    @Column()
+    @Column({
+        unique: true,
+    })
     phonenumber: string;
 
-    @Column()
+    @Column({
+        unique:true,
+    })
     email: string;
 
     @Column({ default: true })
