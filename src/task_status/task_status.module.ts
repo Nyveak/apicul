@@ -3,10 +3,14 @@ import { TaskStatusService } from './task_status.service';
 import { TaskStatusController } from './task_status.controller';
 import { TypeOrmModule } from '@nestjs/typeorm';
 import { TaskStatus } from './entities/task_status.entity';
+import { User } from 'src/user/entities/user.entity';
+import { TaskCategory } from 'src/task_categories/entities/task_category.entity';
+import { Task } from 'src/tasks/entities/task.entity';
 
 @Module({
-  imports: [TypeOrmModule.forFeature([TaskStatus])],
+  imports: [TypeOrmModule.forFeature([TaskStatus,User,TaskCategory,Task])],
   controllers: [TaskStatusController],
   providers: [TaskStatusService],
+  exports: [TypeOrmModule]
 })
 export class TaskStatusModule {}

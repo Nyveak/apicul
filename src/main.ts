@@ -7,6 +7,7 @@ async function bootstrap() {
   app.useGlobalPipes(new ValidationPipe({
     whitelist: true,//Acepta y valida solamente los campos definidos
     forbidNonWhitelisted: true,//Rechaza la solicitud si esta contiene campo no definidos
+    transform:true
   })
 );
   await app.listen(3000);
